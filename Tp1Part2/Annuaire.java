@@ -25,9 +25,9 @@ public class Annuaire {
         public static void main(String[] args){
             Annuaire annuaire = new Annuaire();
             Scanner scanner = new Scanner(System.in);
-            boolean continuer = true;
+            boolean repeat = true;
 
-            while (continuer) {
+            while (repeat) {
                 System.out.println("Entrez une commande (+nom, ?nom, !, . ou bye): ");
                 String commande = scanner.nextLine();
 
@@ -54,7 +54,7 @@ public class Annuaire {
                         annuaire.PrintAllFiches();
                         break;
                     case '.':
-                        continuer = false;
+                        repeat = false;
                         break;
                     default:
                         System.out.println("Commande non reconnue.");
